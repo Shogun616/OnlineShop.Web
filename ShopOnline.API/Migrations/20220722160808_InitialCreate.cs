@@ -37,7 +37,20 @@ namespace ShopOnline.API.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Product",
+                name: "ProductCategories",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ProductCategories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -51,20 +64,7 @@ namespace ShopOnline.API.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Product", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "ProductCategories",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ProductCategories", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -90,7 +90,18 @@ namespace ShopOnline.API.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Product",
+                table: "ProductCategories",
+                columns: new[] { "Id", "Name" },
+                values: new object[,]
+                {
+                    { 1, "Beauty" },
+                    { 2, "Furniture" },
+                    { 3, "Electronics" },
+                    { 4, "Shoes" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Products",
                 columns: new[] { "Id", "CategoryId", "Description", "ImageURL", "Name", "Price", "Qty" },
                 values: new object[,]
                 {
@@ -120,17 +131,6 @@ namespace ShopOnline.API.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "ProductCategories",
-                columns: new[] { "Id", "Name" },
-                values: new object[,]
-                {
-                    { 1, "Beauty" },
-                    { 2, "Furniture" },
-                    { 3, "Electronics" },
-                    { 4, "Shoes" }
-                });
-
-            migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "UserName" },
                 values: new object[,]
@@ -149,10 +149,10 @@ namespace ShopOnline.API.Migrations
                 name: "Carts");
 
             migrationBuilder.DropTable(
-                name: "Product");
+                name: "ProductCategories");
 
             migrationBuilder.DropTable(
-                name: "ProductCategories");
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "Users");

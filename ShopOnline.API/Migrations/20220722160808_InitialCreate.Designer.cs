@@ -11,7 +11,7 @@ using ShopOnline.API.Data;
 namespace ShopOnline.API.Migrations
 {
     [DbContext(typeof(ShopOnlineDbContext))]
-    [Migration("20220720183413_InitialCreate")]
+    [Migration("20220722160808_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -104,7 +104,7 @@ namespace ShopOnline.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Product");
+                    b.ToTable("Products");
 
                     b.HasData(
                         new

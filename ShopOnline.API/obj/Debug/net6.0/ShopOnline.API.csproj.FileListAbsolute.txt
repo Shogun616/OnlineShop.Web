@@ -59,3 +59,5 @@ C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\obj\Debug\net6.0\r
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\obj\Debug\net6.0\ShopOnline.API.pdb
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\obj\Debug\net6.0\ShopOnline.API.genruntimeconfig.cache
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\obj\Debug\net6.0\ref\ShopOnline.API.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\bin\Debug\net6.0\ShopOnline.Models.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.API\bin\Debug\net6.0\ShopOnline.Models.pdb
