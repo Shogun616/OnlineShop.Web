@@ -813,3 +813,12 @@ C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\S
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\refint\ShopOnline.Web.dll
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\ShopOnline.Web.pdb
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\ref\ShopOnline.Web.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\ShopOnline.Models.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\ShopOnline.Models.pdb
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\ShopOnline.Models.pdb.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\ShopOnline.Models.dll.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\ShopOnline.Models.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\ShopOnline.Models.pdb
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\build-gz\BXfXYilu.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\build-gz\1w0JGKAI.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\scopedcss\Pages\DisplayProducts.razor.rz.scp.css
