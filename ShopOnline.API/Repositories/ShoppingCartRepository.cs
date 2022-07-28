@@ -19,6 +19,7 @@ namespace ShopOnline.API.Repositories
         {
             return await this.shopOnlineDbContext.CartItems.AnyAsync(c => c.CartId == cartId && c.ProductId == productId);
         }
+
         public async Task<CartItem> AddItem(CartItemToAddDto cartItemToAddDto)
         {
             if (await CartItemExists(cartItemToAddDto.CartId, cartItemToAddDto.ProductId) == false)
@@ -48,12 +49,12 @@ namespace ShopOnline.API.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<CartItem> GetItem(int Id)
+        public async Task<CartItem> GetItem(int id)
         {
             return await (from cart in this.shopOnlineDbContext.Carts
                           join cartItem in this.shopOnlineDbContext.CartItems
                           on cart.Id equals cartItem.CartId
-                          where cartItem.Id == Id
+                          where cartItem.Id == id
                           select new CartItem
                           {
                               Id = cartItem.Id,
@@ -68,7 +69,7 @@ namespace ShopOnline.API.Repositories
             return await (from cart in this.shopOnlineDbContext.Carts
                           join cartItem in this.shopOnlineDbContext.CartItems
                           on cart.Id equals cartItem.CartId
-                          where cartItem.Id == userId
+                          where cart.UserId == userId
                           select new CartItem
                           {
                               Id = cartItem.Id,
