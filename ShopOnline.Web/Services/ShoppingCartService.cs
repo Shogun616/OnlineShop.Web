@@ -39,7 +39,26 @@ namespace ShopOnline.Web.Services
             }
         }
 
-        public async Task<IEnumerable<CartItemDto>> GetItems(int userId)
+        public async Task<CartItemDto> DeleteItem(int Id)
+        {
+            try
+            {
+                var respone = await httpClient.DeleteAsync($"api/ShoppingCart/{Id}");
+
+                if (respone.IsSuccessStatusCode)
+                {
+                    return await respone.Content.ReadFromJsonAsync<CartItemDto>(); 
+                }
+
+                return default(CartItemDto);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public async Task<List<CartItemDto>> GetItems(int userId)
         {
             try
             {
@@ -52,7 +71,7 @@ namespace ShopOnline.Web.Services
                         return Enumerable.Empty<CartItemDto>().ToList();
                     }
 
-                    return await response.Content.ReadFromJsonAsync<IEnumerable<CartItemDto>>();
+                    return await response.Content.ReadFromJsonAsync<List<CartItemDto>>();
                 }
                 else
                 {

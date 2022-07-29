@@ -44,17 +44,25 @@ namespace ShopOnline.API.Repositories
             return null;
         }
 
-        public Task<CartItem> DeleteItem(int Id)
+        public async Task<CartItem> DeleteItem(int Id)
         {
-            throw new NotImplementedException();
+            var item = await this.shopOnlineDbContext.CartItems.FindAsync(Id);
+
+            if (item != null)
+            {
+                this.shopOnlineDbContext.CartItems.Remove(item);
+                await this.shopOnlineDbContext.SaveChangesAsync();
+            }
+
+            return item;
         }
 
-        public async Task<CartItem> GetItem(int id)
+        public async Task<CartItem> GetItem(int Id)
         {
             return await (from cart in this.shopOnlineDbContext.Carts
                           join cartItem in this.shopOnlineDbContext.CartItems
                           on cart.Id equals cartItem.CartId
-                          where cartItem.Id == id
+                          where cartItem.Id == Id
                           select new CartItem
                           {
                               Id = cartItem.Id,
