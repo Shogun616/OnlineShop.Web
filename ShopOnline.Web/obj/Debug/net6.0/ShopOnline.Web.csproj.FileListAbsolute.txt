@@ -823,3 +823,8 @@ C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\b
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\build-gz\1w0JGKAI.gz
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\scopedcss\Pages\DisplayProducts.razor.rz.scp.css
 C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\scopedcss\Pages\DisplaySpinner.razor.rz.scp.css
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\build-gz\k3xXK8nB.gz
+C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\obj\Debug\net6.0\scopedcss\Pages\ShoppingCart.razor.rz.scp.css

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UxNmMRJudpAQfRSkTdOdKd4xkZg0JYL9vCXtSceG/zX8NaqB99qwwBuWBbP+IT/FDjlxcNwPRifXr0NWqXf2mA==",
+  "dgSpecHash": "XWc1pLNeDj0551QmLgZb96IzXmHL0iTC/X85EKLtL8Vo/infqFjvUyYnYtrYa3vHjLTTAhJwH8JGElFZW/Pjgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\ShopOnline.Web.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\maini\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\maini\\.nuget\\packages\\microsoft.jsinterop\\6.0.7\\microsoft.jsinterop.6.0.7.nupkg.sha512",
     "C:\\Users\\maini\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.7\\microsoft.jsinterop.webassembly.6.0.7.nupkg.sha512",
+    "C:\\Users\\maini\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\maini\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\maini\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\maini\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

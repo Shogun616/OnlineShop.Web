@@ -135,6 +135,30 @@ namespace ShopOnline.API.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-        } 
+        }
+
+        [HttpPatch("{Id:int}")]
+        public async Task<ActionResult<CartItemDto>> UpdateQty(int Id, CartItemQtyUpdateDto cartItemQtyUpdateDto)
+        {
+            try
+            {
+                var cartItem = await this.shoppingCartRepository.UpdateQty(Id, cartItemQtyUpdateDto);
+
+                if (cartItem == null)
+                {
+                    return NotFound();
+                }
+
+                var product = await productRepository.GetItem(cartItem.ProductId);
+
+                var cartItemDto = cartItem.ConvertToDto(product);
+
+                return Ok(cartItemDto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
     }
 }

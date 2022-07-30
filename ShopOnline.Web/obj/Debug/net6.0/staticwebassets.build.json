@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ytHqQ84DaPI5czH6Y90KovXIl/aYmyG/AW0QrD03tjg=",
+  "Hash": "4yCWOfGA7fKufgyx/u4ZMge+VJsQwSwyWvZh3RkEKk8=",
   "Source": "ShopOnline.Web",
   "BasePath": "/",
   "Mode": "Root",
@@ -661,6 +661,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\maini\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.7\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\maini\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib\\netstandard2.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\ShopOnline.Models.dll",
@@ -5236,6 +5253,23 @@
       "OriginalItemSpec": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebClient.dll"
     },
     {
+      "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\obj\\Debug\\net6.0\\build-gz\\k3xXK8nB.gz",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
+    },
+    {
       "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\obj\\Debug\\net6.0\\build-gz\\K5gOnkgP.gz",
       "SourceId": "ShopOnline.Web",
       "SourceType": "Computed",
@@ -7546,6 +7580,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\wwwroot\\Js\\ShoppingCartFunctions.js",
+      "SourceId": "ShopOnline.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Js/ShoppingCartFunctions.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Js\\ShoppingCartFunctions.js"
     },
     {
       "Identity": "C:\\Users\\maini\\source\\repos\\ShopOnlineSolution\\ShopOnline.Web\\wwwroot\\sample-data\\weather.json",
