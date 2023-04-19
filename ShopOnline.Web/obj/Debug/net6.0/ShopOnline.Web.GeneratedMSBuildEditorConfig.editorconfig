@@ -5,10 +5,8 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = browser
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = true
-build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = ShopOnline.Web
 build_property.RootNamespace = ShopOnline.Web
 build_property.ProjectDir = C:\Users\maini\source\repos\ShopOnlineSolution\ShopOnline.Web\
@@ -20,6 +18,10 @@ build_property._RazorSourceGeneratorDebug =
 
 [C:/Users/maini/source/repos/ShopOnlineSolution/ShopOnline.Web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/maini/source/repos/ShopOnlineSolution/ShopOnline.Web/Pages/Checkout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hlY2tvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/maini/source/repos/ShopOnlineSolution/ShopOnline.Web/Pages/Counter.razor]

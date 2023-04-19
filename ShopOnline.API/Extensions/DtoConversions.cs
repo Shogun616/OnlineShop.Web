@@ -5,12 +5,19 @@ namespace ShopOnline.API.Extensions
 {
     public static class DtoConversions
     {
-        public static IEnumerable<ProductDto> ConvertToDto(this IEnumerable<Product> products,
-            IEnumerable<ProductCategory> productCategories)
+        public static IEnumerable<ProductCategoryDto> ConvertToDto(this IEnumerable<ProductCategory> productCategories)
+        {
+            return (from productCategory in productCategories
+                    select new ProductCategoryDto
+                    {
+                        Id = productCategory.Id,
+                        Name = productCategory.Name,
+                        IconCSS = productCategory.IconCSS
+                    }).ToList();
+        }
+        public static IEnumerable<ProductDto> ConvertToDto(this IEnumerable<Product> products)
         {
             return (from product in products
-                    join productCategory in productCategories
-                    on product.CategoryId equals productCategory.Id
                     select new ProductDto
                     {
                         Id = product.Id,
@@ -19,12 +26,12 @@ namespace ShopOnline.API.Extensions
                         ImageURL = product.ImageURL,
                         Price = product.Price,
                         Qty = product.Qty,
-                        CategoryId = product.CategoryId,
-                        CategoryName = productCategory.Name
+                        CategoryId = product.ProductCategory.Id,
+                        CategoryName = product.ProductCategory.Name
                     }).ToList();
         }
+        public static ProductDto ConvertToDto(this Product product)
 
-        public static ProductDto ConvertToDto(this Product product, ProductCategory productCategory)
         {
             return new ProductDto
             {
@@ -34,8 +41,8 @@ namespace ShopOnline.API.Extensions
                 ImageURL = product.ImageURL,
                 Price = product.Price,
                 Qty = product.Qty,
-                CategoryId = product.CategoryId,
-                CategoryName = productCategory.Name
+                CategoryId = product.ProductCategory.Id,
+                CategoryName = product.ProductCategory.Name
 
             };
         }
@@ -59,9 +66,8 @@ namespace ShopOnline.API.Extensions
                         TotalPrice = product.Price * cartItem.Qty
                     }).ToList();
         }
-
         public static CartItemDto ConvertToDto(this CartItem cartItem,
-                                               Product product)
+                                                    Product product)
         {
             return new CartItemDto
             {
